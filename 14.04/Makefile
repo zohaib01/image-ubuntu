@@ -12,7 +12,7 @@ SOURCE_URL =		https://github.com/online-labs/image-ubuntu/tree/master/14.04
 all:	docker-rules.mk
 docker-rules.mk:
 	wget https://raw.githubusercontent.com/online-labs/image-tools/master/docker-rules.mk
--include ../docker-rules.mk
+-include docker-rules.mk
 
 
 ## Here you can add custom commands and overrides
