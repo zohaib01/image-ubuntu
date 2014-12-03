@@ -5,7 +5,7 @@ VERSION_ALIASES =	14.10
 IS_LATEST =		1
 TITLE =			Ubuntu Utopic
 DESCRIPTION =		Ubuntu Utopic (14.10)
-SOURCE_URL =		https://github.com/online-labs/image-ubuntu/tree/master/14.10
+SOURCE_URL =		https://github.com/online-labs/image-ubuntu
 
 
 ## Image tools

@@ -5,7 +5,7 @@ VERSION_ALIASES =	14.04.1 14.04
 IS_LATEST =		0
 TITLE =			Ubuntu Trusty
 DESCRIPTION =		Ubuntu Trusty (14.04 LTS)
-SOURCE_URL =		https://github.com/online-labs/image-ubuntu/tree/master/14.04
+SOURCE_URL =		https://github.com/online-labs/image-ubuntu
 
 
 ## Image tools

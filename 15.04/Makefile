@@ -5,7 +5,7 @@ VERSION_ALIASES =	15.04
 IS_LATEST =		0
 TITLE =			Ubuntu Vivid
 DESCRIPTION =		Ubuntu Vivid (15.04)
-SOURCE_URL =		https://github.com/online-labs/image-ubuntu/tree/master/15.04
+SOURCE_URL =		https://github.com/online-labs/image-ubuntu
 
 
 ## Image tools
