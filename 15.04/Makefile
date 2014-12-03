@@ -8,7 +8,7 @@ DESCRIPTION =		Ubuntu Vivid (15.04)
 SOURCE_URL =		https://github.com/online-labs/image-ubuntu
 
 
-## Image tools
+## Image tools  (https://github.com/online-labs/image-tools)
 all:	docker-rules.mk
 docker-rules.mk:
 	wget https://raw.githubusercontent.com/online-labs/image-tools/master/docker-rules.mk
