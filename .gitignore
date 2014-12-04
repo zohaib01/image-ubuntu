@@ -1,3 +1,4 @@
+docker-rules.mk
 *~
 .*~
 *#
@@ -8,3 +9,4 @@ sd*.raw*
 rootfs*
 */*.tar
 */*.built
+.docker-container.built
