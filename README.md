@@ -3,7 +3,7 @@ Official Ubuntu images on Online Labs
 
 Scripts to build the official Ubuntu images on Online Labs
 
-These images are built using [Image Tools](https://github.com/online-labs/image-tools) and depends on the [armhf port of ubuntu-deboostrap docker images](https://registry.hub.docker.com/u/armbuild/ubuntu-debootstrap/).
+These images are built using [Image Tools](https://github.com/online-labs/image-tools) and depends on the [armhf port of ubuntu-deboostrap docker images](https://registry.hub.docker.com/u/armbuild/ubuntu-debootstrap/) and scripts from [ocs-scripts](https://github.com/online-labs/ocs-scripts).
 
 Available tags
 --------------
@@ -27,13 +27,6 @@ Commands
     $ make install_on_disk
     
 Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
-
-Related projects
-----------------
-
-- https://github.com/online-labs/image-tools (Main project for building images on Online Labs)
-- https://github.com/online-labs/image-builder (Old repository with full history)
-- https://github.com/online-labs/ocs-scripts (Common scripts for distributions)
 
 Links
 -----
