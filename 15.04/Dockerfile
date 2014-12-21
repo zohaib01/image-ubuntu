@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:vivid" -*-
 FROM armbuild/ubuntu-debootstrap:vivid
-MAINTAINER Online Labs <opensource@ocs.online.net>
+MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
 
 
 # Environment

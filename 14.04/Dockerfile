@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:trusty" -*-
 FROM armbuild/ubuntu-debootstrap:trusty
-MAINTAINER Online Labs <opensource@ocs.online.net>
+MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
 
 
 # Environment
