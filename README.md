@@ -1,5 +1,5 @@
-Official Ubuntu images on Online Labs
-====================================
+Official Ubuntu images on Online Labs [![Build Status](https://travis-ci.org/online-labs/image-ubuntu.svg?branch=master)](https://travis-ci.org/online-labs/image-ubuntu)
+=====================================
 
 Scripts to build the official Ubuntu images on Online Labs
 
