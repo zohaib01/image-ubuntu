@@ -5,6 +5,8 @@ Scripts to build the official Ubuntu images on Online Labs
 
 These images are built using [Image Tools](https://github.com/online-labs/image-tools) and depends on the [armhf port of ubuntu-deboostrap docker images](https://registry.hub.docker.com/u/armbuild/ubuntu-debootstrap/) and scripts from [ocs-scripts](https://github.com/online-labs/ocs-scripts).
 
+<img src="http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_no®-black_orange-hex.svg" width="250px" />
+
 ---
 
 **This image is meant to be used on a C1 server.**
@@ -36,3 +38,7 @@ Links
 
 - [Community: Official Ubuntu Image](https://community.cloud.online.net/t/official-ubuntu-image/345?u=manfred)
 - [Community: New Linux Distributions on C1](https://community.cloud.online.net/t/official-new-linux-distributions-debian-coreos-centos-fedora-arch-linux/229?u=manfred)
+
+---
+
+A project by [![Online Labs](https://raw.githubusercontent.com/online-labs/doc.cloud.online.net/master/www/documentation/docs_public/contents/images/logo_footer.png)](http://labs.online.net/)
