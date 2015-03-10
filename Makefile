@@ -11,6 +11,7 @@ PROXYFIED_COMMANDS ?=	\
 	publish_on_s3.tar \
 	publish_on_s3.tar.gz \
 	re \
+	rebuild \
 	release \
 	run \
 	shell \
