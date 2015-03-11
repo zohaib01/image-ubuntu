@@ -10,20 +10,18 @@ ENV OCS_BASE_IMAGE armbuild/ocs-ubuntu:vivid
 
 
 # Patch rootfs for docker-based builds
-RUN apt-get -q update && \
-    apt-get -y -qq install wget lsb-release && \
-    apt-get clean && \
-    wget --no-check-certificate https://codeload.github.com/online-labs/ocs-scripts/tar.gz/master -O /tmp/builder-enter.tgz && \
-    tar --strip=2 -C / -xzvf /tmp/builder-enter.tgz ocs-scripts-master/skeleton-docker-based/usr/local/sbin/builder-enter && \
-    rm -f /tmp/builder-enter.tgz && \
-    /usr/local/sbin/builder-enter
+RUN apt-get -y -q update \
+ && apt-get -y -qq install bash curl lsb-release tar \
+ && apt-get -y clean \
+ && curl -Lq http://j.mp/ocs-scripts | FLAVORS=common,docker-based bash -e \
+ && /usr/local/sbin/builder-enter
 
 
 # Install packages
 ADD ./patches/etc/apt/sources.list /etc/apt/sources.list
 RUN apt-get -q update && \
-    apt-get -y -qq upgrade && \
-    apt-get install -y -qq \
+    apt-get -y --force-yes -qq upgrade && \
+    apt-get -y --force-yes -qq install \
 	bash-completion \
 	bc \
 	ca-certificates \
@@ -75,10 +73,9 @@ RUN apt-get -q update && \
 
 
 # Patch rootfs
-# - Add ocs-scripts
 # - Tweaks rootfs so it matches Online Labs infrastructure
 RUN rm -f /etc/update-motd.d/10-help-text /etc/update-motd.d/00-header
-RUN wget -qO - http://j.mp/ocs-scripts | FLAVORS=docker-based,upstart bash
+RUN curl -Lq http://j.mp/ocs-scripts | FLAVORS=upstart bash -e
 ADD ./patches/etc/ /etc/
 
 
