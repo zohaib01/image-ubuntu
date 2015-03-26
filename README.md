@@ -18,7 +18,8 @@ We use the Docker's building system and convert it at the end to a disk image th
 Available tags
 --------------
 
-- trusty (14.04.1, 14.04)
+- precise (12.04.5, 12.04)
+- trusty (14.04.1, 14.04, lts)
 - utopic (14.10, latest)
 - vivid (15.04)
 
