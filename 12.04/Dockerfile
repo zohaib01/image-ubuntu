@@ -65,6 +65,7 @@ RUN apt-get -q update && \
 	sysstat \
 	tcpdump \
 	tmux \
+	vim \
 	wget \
 	whiptail \
 	xnbd-client \
