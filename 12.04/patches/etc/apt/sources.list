@@ -1,4 +1,3 @@
-deb http://mirror.cloud.online.net/ubuntu-ports precise main universe
-
-deb http://ports.ubuntu.com precise-security main
-deb http://ports.ubuntu.com precise-security universe
+deb http://mirror.cloud.online.net/ubuntu-ports precise main restricted universe multiverse
+deb http://ports.ubuntu.com precise-updates main restricted universe multiverse
+deb http://ports.ubuntu.com precise-security main restricted universe multiverse
