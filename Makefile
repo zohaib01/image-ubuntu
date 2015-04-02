@@ -17,7 +17,7 @@ PROXYFIED_COMMANDS ?=	\
 	shell \
 	travis
 
-all:	
+all:
 	build
 
 # Proxyfied Makefile commands
@@ -29,4 +29,4 @@ $(PROXYFIED_COMMANDS):
 
 
 docker-rules.mk:
-	wget -qO - http://j.mp/image-tools | bash
+	wget -qO - http://j.mp/scw-image-tools | bash

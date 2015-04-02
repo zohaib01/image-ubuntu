@@ -1,6 +1,6 @@
 ## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:vivid" -*-
 FROM armbuild/ubuntu-debootstrap:vivid
-MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
 # Environment
@@ -13,7 +13,7 @@ ENV OCS_BASE_IMAGE armbuild/ocs-ubuntu:vivid
 RUN apt-get -y -q update \
  && apt-get -y -qq install bash curl lsb-release tar \
  && apt-get -y clean \
- && curl -Lq http://j.mp/ocs-scripts | FLAVORS=common,docker-based bash -e \
+ && curl -Lq http://j.mp/scw-skeleton | FLAVORS=common,docker-based bash -e \
  && /usr/local/sbin/builder-enter
 
 
@@ -73,9 +73,9 @@ RUN apt-get -q update && \
 
 
 # Patch rootfs
-# - Tweaks rootfs so it matches Online Labs infrastructure
+# - Tweaks rootfs so it matches Scaleway infrastructure
 RUN rm -f /etc/update-motd.d/10-help-text /etc/update-motd.d/00-header
-RUN curl -Lq http://j.mp/ocs-scripts | FLAVORS=upstart bash -e
+RUN curl -Lq http://j.mp/scw-skeleton | FLAVORS=upstart bash -e
 ADD ./patches/etc/ /etc/
 
 

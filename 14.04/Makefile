@@ -4,10 +4,10 @@ VERSION =		trusty
 VERSION_ALIASES =	14.04.1 14.04 lts
 TITLE =			Ubuntu Trusty
 DESCRIPTION =		Ubuntu Trusty (14.04 LTS)
-SOURCE_URL =		https://github.com/online-labs/image-ubuntu
+SOURCE_URL =		https://github.com/scaleway/image-ubuntu
 
 
-## Image tools  (https://github.com/online-labs/image-tools)
+## Image tools  (https://github.com/scaleway/image-tools)
 all:	../docker-rules.mk
 ../docker-rules.mk:
 	$(MAKE) -C .. docker-rules.mk

@@ -4,10 +4,10 @@ VERSION =		precise
 VERSION_ALIASES =	12.04.5 12.04
 TITLE =			Ubuntu Precise
 DESCRIPTION =		Ubuntu Precise (12.04 LTS)
-SOURCE_URL =		https://github.com/online-labs/image-ubuntu
+SOURCE_URL =		https://github.com/scaleway/image-ubuntu
 
 
-## Image tools  (https://github.com/online-labs/image-tools)
+## Image tools  (https://github.com/scaleway/image-tools)
 all:	../docker-rules.mk
 ../docker-rules.mk:
 	$(MAKE) -C .. docker-rules.mk
