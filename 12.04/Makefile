@@ -1,5 +1,5 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-distrib-ubuntu
+NAME =			scw-distrib-ubuntu
 VERSION =		precise
 VERSION_ALIASES =	12.04.5 12.04
 TITLE =			Ubuntu Precise

@@ -1,5 +1,5 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-distrib-ubuntu
+NAME =			scw-distrib-ubuntu
 VERSION =		utopic
 VERSION_ALIASES =	14.10 latest
 TITLE =			Ubuntu Utopic

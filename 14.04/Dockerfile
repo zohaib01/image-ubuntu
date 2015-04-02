@@ -1,4 +1,4 @@
-## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:trusty" -*-
+## -*- docker-image-name: "armbuild/scw-distrib-ubuntu:trusty" -*-
 FROM armbuild/ubuntu-debootstrap:trusty
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
@@ -6,7 +6,7 @@ MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 # Environment
 ENV DEBIAN_FRONTEND noninteractive
 # Useful for image inheritance
-ENV OCS_BASE_IMAGE armbuild/ocs-ubuntu:trusty
+ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:trusty
 
 
 # Patch rootfs for docker-based builds

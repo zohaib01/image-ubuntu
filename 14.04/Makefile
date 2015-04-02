@@ -1,5 +1,5 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-distrib-ubuntu
+NAME =			scw-distrib-ubuntu
 VERSION =		trusty
 VERSION_ALIASES =	14.04.1 14.04 lts
 TITLE =			Ubuntu Trusty

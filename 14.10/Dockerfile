@@ -1,4 +1,4 @@
-## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:utopic" -*-
+## -*- docker-image-name: "armbuild/scw-distrib-ubuntu:utopic" -*-
 FROM armbuild/ubuntu-debootstrap:utopic
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
@@ -6,7 +6,7 @@ MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 # Environment
 ENV DEBIAN_FRONTEND noninteractive
 # Useful for image inheritance
-ENV OCS_BASE_IMAGE armbuild/ocs-ubuntu:utopic
+ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:utopic
 
 
 # Patch rootfs for docker-based builds

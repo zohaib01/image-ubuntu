@@ -1,5 +1,5 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-distrib-ubuntu
+NAME =			scw-distrib-ubuntu
 VERSION =		vivid
 VERSION_ALIASES =	15.04
 TITLE =			Ubuntu Vivid

@@ -1,4 +1,4 @@
-## -*- docker-image-name: "armbuild/ocs-distrib-ubuntu:precise" -*-
+## -*- docker-image-name: "armbuild/scw-distrib-ubuntu:precise" -*-
 FROM armbuild/ubuntu-debootstrap:precise
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
@@ -6,7 +6,7 @@ MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 # Environment
 ENV DEBIAN_FRONTEND noninteractive
 # Useful for image inheritance
-ENV OCS_BASE_IMAGE armbuild/ocs-ubuntu:precise
+ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:precise
 
 
 # Patch rootfs for docker-based builds
