@@ -1,6 +1,8 @@
 Official Ubuntu images on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-ubuntu.svg?branch=master)](https://travis-ci.org/scaleway/image-ubuntu)
 ==================================
 
+[![Run on Scaleway](http://scaleway.github.io/image-tools/assets/run.svg)](https://cloud.scaleway.com/#/servers/new?image=1a39e461-18a2-4b82-a141-295826a7f831)
+
 Scripts to build the official Ubuntu images on Scaleway
 
 These images are built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the [armhf port of ubuntu-deboostrap docker images](https://registry.hub.docker.com/u/armbuild/ubuntu-debootstrap/).
