@@ -1,7 +1,8 @@
-Official Ubuntu images on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-ubuntu.svg?branch=master)](https://travis-ci.org/scaleway/image-ubuntu)
-==================================
+# Official Ubuntu images on Scaleway
 
-[![Run on Scaleway](http://scaleway.github.io/image-tools/assets/run.svg)](https://cloud.scaleway.com/#/servers/new?image=1a39e461-18a2-4b82-a141-295826a7f831)
+[![Travis](https://img.shields.io/travis/scaleway/image-ubuntu.svg)](https://travis-ci.org/scaleway/image-ubuntu)
+[![Scaleway ImageHub](https://img.shields.io/badge/ImageHub-view-ff69b4.svg)](https://hub.scaleway.com/ubuntu-trusty.html)
+[![Run on Scaleway](https://img.shields.io/badge/Scaleway-run-69b4ff.svg)](https://cloud.scaleway.com/#/servers/new?image=1a39e461-18a2-4b82-a141-295826a7f831)
 
 Scripts to build the official Ubuntu images on Scaleway
 
