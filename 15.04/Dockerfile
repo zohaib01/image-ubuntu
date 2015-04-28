@@ -81,8 +81,15 @@ ADD ./patches/etc/ /etc/
 
 # Configure locales
 RUN locale-gen en_US.UTF-8 && \
-    locale-gen fr_FR.UTF-8 && \
-    dpkg-reconfigure locales
+	locale-gen fr_FR.UTF-8 && \
+	dpkg-reconfigure locales
+
+    
+# Enable Scaleway services
+RUN systemctl enable \
+	oc-ssh-keys \
+	oc-add-extra-volumes \
+	oc-sync-kernel-modules
 
 
 # Clean rootfs from image-builder
