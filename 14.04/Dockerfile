@@ -69,6 +69,7 @@ RUN apt-get -q update && \
 	wget \
 	whiptail \
 	xnbd-client \
+	software-properties-common \
     && apt-get clean
 
 
