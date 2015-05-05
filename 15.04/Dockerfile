@@ -86,13 +86,13 @@ RUN locale-gen en_US.UTF-8 && \
     
 # Enable Scaleway services
 RUN systemctl enable \
-	oc-ssh-keys \
+	oc-fetch-ssh-keys \
+	oc-generate-ssh-keys \
 	oc-add-extra-volumes \
 	oc-sync-kernel-modules
 
 
 RUN rm -f /sbin/init && cp /lib/systemd/systemd /sbin/init
-RUN echo root:root | chpasswd
 
 
 # Clean rootfs from image-builder
