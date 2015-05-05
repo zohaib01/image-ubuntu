@@ -13,12 +13,12 @@ ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:vivid
 RUN apt-get -y -q update \
  && apt-get -y -qq install bash curl lsb-release tar \
  && apt-get -y clean \
- && curl -Lq http://j.mp/scw-skeleton | FLAVORS=common,docker-based bash -e \
+ && curl -Lq http://j.mp/scw-skeleton | FLAVORS=common,docker-based,systemd bash -e \
  && /usr/local/sbin/builder-enter
 
 
-# Install packages
 ADD ./patches/etc/apt/sources.list /etc/apt/sources.list
+# Install packages
 RUN apt-get -q update && \
     apt-get -y --force-yes -qq upgrade && \
     apt-get -y --force-yes -qq install \
@@ -75,7 +75,6 @@ RUN apt-get -q update && \
 # Patch rootfs
 # - Tweaks rootfs so it matches Scaleway infrastructure
 RUN rm -f /etc/update-motd.d/10-help-text /etc/update-motd.d/00-header
-RUN curl -Lq http://j.mp/scw-skeleton | FLAVORS=systemd bash -e
 ADD ./patches/etc/ /etc/
 
 
@@ -90,6 +89,10 @@ RUN systemctl enable \
 	oc-ssh-keys \
 	oc-add-extra-volumes \
 	oc-sync-kernel-modules
+
+
+RUN rm -f /sbin/init && cp /lib/systemd/systemd /sbin/init
+RUN echo root:root | chpasswd
 
 
 # Clean rootfs from image-builder
