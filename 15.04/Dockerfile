@@ -48,7 +48,6 @@ RUN apt-get -q update && \
 	mg \
 	mosh \
 	nano \
-	nbd-client \
 	net-tools \
 	netcat \
 	ntp \
@@ -68,7 +67,6 @@ RUN apt-get -q update && \
 	vim \
 	wget \
 	whiptail \
-	xnbd-client \
     && apt-get clean
 
 
