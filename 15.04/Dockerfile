@@ -81,13 +81,25 @@ RUN locale-gen en_US.UTF-8 && \
 	locale-gen fr_FR.UTF-8 && \
 	dpkg-reconfigure locales
 
-    
-# Enable Scaleway services
+
+
+
+# Default target
+RUN systemctl set-default multi-user
+
+
+# Configure Systemd
 RUN systemctl enable \
-	oc-fetch-ssh-keys \
+        oc-fetch-ssh-keys \
+	oc-sync-kernel-modules \
 	oc-generate-ssh-keys \
 	oc-add-extra-volumes \
-	oc-sync-kernel-modules
+ && systemctl disable \
+	systemd-modules-load.service \
+	dev-ttyS0.device \
+	systemd-update-utmp-runlevel \
+	proc-sys-fs-binfmt_misc.automount \
+	kmod-static-nodes.service
 
 
 RUN rm -f /sbin/init && cp /lib/systemd/systemd /sbin/init
