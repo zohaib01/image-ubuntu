@@ -77,6 +77,7 @@ RUN apt-get -q update && \
 RUN rm -f /etc/update-motd.d/10-help-text /etc/update-motd.d/00-header
 RUN curl -Lq http://j.mp/scw-skeleton | FLAVORS=upstart bash -e
 ADD ./patches/etc/ /etc/
+ADD ./patches/usr/ /usr/
 
 
 # Configure locales

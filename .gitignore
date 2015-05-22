@@ -10,3 +10,4 @@ rootfs*
 */*.tar
 */*.built
 .docker-container.built
+qemu-arm-static
