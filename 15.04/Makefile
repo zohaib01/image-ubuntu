@@ -5,9 +5,10 @@ VERSION_ALIASES =	15.04
 TITLE =			Ubuntu Vivid
 DESCRIPTION =		Ubuntu Vivid (15.04)
 SOURCE_URL =		https://github.com/scaleway/image-ubuntu
-
-
 ASSETS =                patches/usr/bin/qemu-arm-static patches/usr/local/bin/qemu-arm-static
+
+
+all: help
 
 
 patches/usr/bin/qemu-arm-static:

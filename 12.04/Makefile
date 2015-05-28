@@ -5,9 +5,10 @@ VERSION_ALIASES =	12.04.5 12.04
 TITLE =			Ubuntu Precise
 DESCRIPTION =		Ubuntu Precise (12.04 LTS)
 SOURCE_URL =		https://github.com/scaleway/image-ubuntu
-
-
 ASSETS =                patches/usr/bin/qemu-arm-static patches/usr/local/bin/qemu-arm-static
+
+
+all: help
 
 
 patches/usr/bin/qemu-arm-static:

@@ -5,9 +5,10 @@ VERSION_ALIASES =	14.04.1 14.04 lts
 TITLE =			Ubuntu Trusty
 DESCRIPTION =		Ubuntu Trusty (14.04 LTS)
 SOURCE_URL =		https://github.com/scaleway/image-ubuntu
-
-
 ASSETS =                patches/usr/bin/qemu-arm-static patches/usr/local/bin/qemu-arm-static
+
+
+all: help
 
 
 patches/usr/bin/qemu-arm-static:
