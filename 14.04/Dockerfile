@@ -9,10 +9,6 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:trusty
 
 
-# Add cross-build binaries
-ADD ./patches/usr/ /usr/
-
-
 # Patch rootfs for docker-based builds
 RUN apt-get -y -q update \
  && apt-get -y -qq install bash curl lsb-release tar \
