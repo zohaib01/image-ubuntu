@@ -62,6 +62,7 @@ RUN apt-get -q update && \
 	ssh \
 	sudo \
 	sysstat \
+	systemd-sysv \
 	tcpdump \
 	tmux \
 	vim \
