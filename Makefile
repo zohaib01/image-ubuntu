@@ -2,6 +2,7 @@ VERSIONS ?=	12.04 14.04 14.10 15.04
 PROXYFIED_COMMANDS ?=	\
 	all \
 	build \
+	check_s3 \
 	clean \
 	info \
 	install \
