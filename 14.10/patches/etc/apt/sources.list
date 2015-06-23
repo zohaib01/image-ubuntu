@@ -1,4 +1,5 @@
 deb http://mirror.scaleway.com/ubuntu-ports utopic main universe
+deb-src http://ports.ubuntu.com/ubuntu-ports utopic main universe
 
 deb http://ports.ubuntu.com utopic-security main
 deb http://ports.ubuntu.com utopic-security universe
