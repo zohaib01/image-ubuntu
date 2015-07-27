@@ -105,7 +105,9 @@ RUN systemctl enable \
 RUN systemctl mask dev-ttyS0.device
 
 
-RUN rm -f /sbin/init && ln -sf /lib/systemd/systemd /sbin/init
+RUN rm -f /sbin/init /bin/init \
+ && ln -sf ../lib/systemd/systemd /sbin/init \
+ && ln -sf ../lib/systemd/systemd /bin/init
 
 
 # Clean rootfs from image-builder
