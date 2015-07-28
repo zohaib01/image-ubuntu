@@ -102,8 +102,6 @@ RUN systemctl enable \
 	proc-sys-fs-binfmt_misc.automount \
 	kmod-static-nodes.service
 
-RUN systemctl mask dev-ttyS0.device
-
 
 RUN rm -f /sbin/init /bin/init \
  && ln -sf ../lib/systemd/systemd /sbin/init \
