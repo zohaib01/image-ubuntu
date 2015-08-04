@@ -13,6 +13,10 @@ ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:precise
 ADD ./patches/usr/local/bin/ /usr/local/bin/
 
 
+# ./patches/etc/apt/ contains source.list + apt.conf tuning
+ADD ./patches/etc/apt/ /etc/apt/
+
+
 # Patch rootfs for docker-based builds
 RUN apt-get -y -q update \
  && apt-get -y -qq install bash curl lsb-release tar \
@@ -22,7 +26,6 @@ RUN apt-get -y -q update \
 
 
 # Install packages
-ADD ./patches/etc/apt/sources.list /etc/apt/sources.list
 RUN apt-get -q update && \
     apt-get -y -qq upgrade && \
     apt-get -y -qq install \
