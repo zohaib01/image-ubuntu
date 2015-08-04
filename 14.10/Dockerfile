@@ -9,6 +9,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:utopic
 
 
+# ./patches/usr/local/bin/ is where the builder downloads qemu-*-static binaries
+ADD ./patches/usr/local/bin/ /usr/local/bin/
+
+
 # Patch rootfs for docker-based builds
 RUN apt-get -y -q update \
  && apt-get -y -qq install bash curl lsb-release tar \
