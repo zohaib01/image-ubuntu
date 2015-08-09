@@ -40,6 +40,7 @@ RUN apt-get -q update && \
 	file \
 	fio \
 	htop \
+	haveged \
 	ioping \
 	iotop \
 	iperf \
