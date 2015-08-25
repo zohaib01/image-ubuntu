@@ -54,6 +54,7 @@ RUN apt-get -q update && \
 	make \
 	man-db \
 	mg \
+	module-init-tools \
 	mosh \
 	nano \
 	net-tools \
