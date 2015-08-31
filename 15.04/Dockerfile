@@ -92,8 +92,6 @@ RUN locale-gen en_US.UTF-8 && \
 	dpkg-reconfigure locales
 
 
-
-
 # Default target
 RUN systemctl set-default multi-user
 
@@ -107,12 +105,14 @@ RUN systemctl enable \
 	oc-gen-machine-id \
 	oc-kernel-check \
  && systemctl disable \
-	systemd-modules-load.service \
-	systemd-update-utmp-runlevel \
+	getty@tty1 \
+	kmod-static-nodes.service \
 	proc-sys-fs-binfmt_misc.automount \
-	kmod-static-nodes.service
+	systemd-modules-load.service \
+	systemd-update-utmp-runlevel
 
 
+# make /sbin/init a relative symlink for initrd boot
 RUN rm -f /sbin/init /bin/init \
  && ln -sf ../lib/systemd/systemd /sbin/init \
  && ln -sf ../lib/systemd/systemd /bin/init
