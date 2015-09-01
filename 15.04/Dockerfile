@@ -10,7 +10,7 @@ ENV SCW_BASE_IMAGE armbuild/scw-ubuntu:vivid
 
 
 # ./patches/usr/local/bin/ is where the builder downloads qemu-*-static binaries
-ADD ./patches/usr/local/bin/ /usr/local/bin/
+# ADD ./patches/usr/local/bin/ /usr/local/bin/
 
 
 # ./patches/etc/apt/ contains source.list + apt.conf tuning
@@ -101,7 +101,6 @@ RUN systemctl enable \
         oc-fetch-ssh-keys \
 	oc-sync-kernel-modules \
 	oc-generate-ssh-keys \
-	oc-add-extra-volumes \
 	oc-gen-machine-id \
 	oc-kernel-check \
  && systemctl disable \
